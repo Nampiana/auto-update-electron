@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      <h1>voila la nouvelle version 🎉</h1>
+      <h1>🎉 Nouvelle version 1.0.2 installée ! 🎉</h1>
     </div>
   );
 }

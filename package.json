@@ -1,7 +1,7 @@
 {
   "main": "public/electron.js",
   "name": "mon-projet-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
