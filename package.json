@@ -1,6 +1,7 @@
 {
+  "main": "public/electron.js",
   "name": "mon-projet-react",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
@@ -13,7 +14,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dist":  "cross-env GH_TOKEN=$GH_TOKEN npx electron-builder --win --publish always"
+    "dist": "npx electron-builder --win --publish always",
+    "electron": "npx electron ."
   },
   "build": {
     "appId": "com.monsite.application",
@@ -33,7 +35,6 @@
     "extends": [
       "react-app",
       "react-app/jest"
-
     ]
   },
   "browserslist": {
@@ -49,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "electron": "^34.1.1",
     "electron-builder": "^25.1.8",
     "web-vitals": "^4.2.4"

@@ -12,7 +12,7 @@ app.whenReady().then(() => {
     }
   });
 
-  mainWindow.loadURL("http://localhost:5173"); // URL du serveur Vite pendant le dev
+  mainWindow.loadURL("http://localhost:3000"); // URL du serveur Vite pendant le dev
   
   // Vérifier les mises à jour
   autoUpdater.checkForUpdatesAndNotify();
@@ -22,7 +22,7 @@ app.whenReady().then(() => {
 autoUpdater.on("update-available", () => {
   dialog.showMessageBox({
     type: "info",
-    title: "Mise à jour disponible",
+    title: "Mise à jour disponible maintenant",
     message: "Une nouvelle version est disponible. Voulez-vous mettre à jour maintenant ?",
     buttons: ["Oui", "Non"]
   }).then((result) => {
