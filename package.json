@@ -12,7 +12,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dist":  "cross-env GH_TOKEN=$GH_TOKEN npx electron-builder --win --publish always"
   },
   "build": {
     "appId": "com.monsite.application",
